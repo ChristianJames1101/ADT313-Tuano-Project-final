@@ -1,0 +1,151 @@
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+}
+
+.loading-message {
+  color: green;
+  margin-bottom: 15px;
+}
+
+
+.cast-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+li input {
+  margin-left: 10px;
+  flex: 1;
+}
+
+
+.photo-gallery {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.photo-gallery .photo-item {
+  width: 300px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+.video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.video-gallery iframe {
+  width: 300px;
+  height: 180px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.pagination button {
+  padding: 5px 15px;
+}
+.movie-poster {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0 auto 20px;
+  display: block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.poster-image {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+
+.searched-movie {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 15px 0;
+}
+
+.searched-movie p {
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.searched-movie p.selected {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.searched-movie p:hover {
+  text-decoration: underline;
+}

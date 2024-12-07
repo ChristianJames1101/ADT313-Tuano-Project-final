@@ -1,0 +1,105 @@
+.Register {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/public/background-2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.main-container {
+  width: 400px;
+  border-radius: 0.75rem;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 2rem;
+  color: rgba(220, 230, 240, 1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.main-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #62b4f9;
+}
+
+.form-containerg {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.form-group label {
+  color: rgba(130, 150, 180, 1);
+  margin-bottom: 4px;
+}
+
+.form-group input {
+  padding: 0.8rem;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #62b4f9;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+}
+
+.form-group input:focus {
+  border: 1px solid #3c8ed9;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.submit-container {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.btn-register {
+  display: block;
+  width: 100%;
+  background: linear-gradient(to right, #3c8ed9, #62b4f9);
+  padding: 0.9rem;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0px 3px 8px rgba(60, 142, 217, 0.5);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-register:hover {
+  background: linear-gradient(to right, #2a6db3, #3c8ed9);
+  transform: translateY(-2px);
+}
+
+.reg-container {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #c5dff6;
+  text-align: center;
+}
+
+.reg-container a {
+  color: #62b4f9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.reg-container a:hover {
+  text-decoration: underline;
+  color: #3c8ed9;
+}
