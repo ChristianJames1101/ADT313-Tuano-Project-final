@@ -35,7 +35,7 @@ function Main() {
               </a>
             </li>
             <li>
-              <a onClick={() => navigate('/home')}>Home</a>
+              <a onClick={() => navigate('/home')}>Movies</a>
             </li>
             {accessToken ? (
               <li className='logout'>

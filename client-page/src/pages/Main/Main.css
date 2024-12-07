@@ -3,32 +3,39 @@
   overflow: hidden;
   max-height: 100vh;
 }
+
 .Main .container {
   display: flex;
   flex-direction: column;
   width: 100vw;
   height: 100vh;
 }
+
 .Main .container .outlet {
-  flex-grow: 3;
+  flex-grow: 1;
   padding: 1rem;
   overflow-y: auto;
 }
+
 .Main .container .navigation {
   height: 80px;
   background-color: #15171b;
   width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
+
 .Main .container .navigation ul {
   list-style: none;
   overflow: hidden;
   padding: 0;
   margin: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Main .container .navigation ul li {
-  padding: 0px 60px;
+  padding: 0 30px;
   height: 80px;
   display: flex;
   flex-direction: column;
@@ -36,26 +43,47 @@
   align-items: center;
   color: #61dafb;
   font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
 }
+
 .Main .container .navigation ul li a {
   text-decoration: none;
-  color: #61dafb;
+  color: inherit;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
 }
+
 .Main .container .navigation ul li.active a,
 .Main .container .navigation ul li:hover a {
-  text-decoration: none;
   color: white;
 }
+
 .Main .container .navigation ul li.active,
 .Main .container .navigation ul li:hover {
-  background: #353a43;
-}
-.Main .container .navigation ul li a {
-  text-decoration: none;
+  background-color: #353a43;
+  transform: scale(1.05);
 }
 
 .Main .container .navigation ul li.logout,
 .Main .container .navigation ul li.login {
   cursor: pointer;
-  justify-self: end;
+}
+
+.Main .container .navigation ul li.logout:hover,
+.Main .container .navigation ul li.login:hover {
+  color: #ff5f57; 
+  transform: scale(1.05);
+}
+
+.Main .container .navigation ul li.logout {
+  margin-left: auto;
+}
+.Main .container .navigation ul li.logout {
+  cursor: pointer;
+  color: #ff5f57; 
+}
+
+.Main .container .navigation ul li.logout:hover {
+  color: #e14d44; 
+  transform: scale(1.05);
 }
