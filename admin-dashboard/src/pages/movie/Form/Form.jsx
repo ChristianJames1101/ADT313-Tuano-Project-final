@@ -166,8 +166,6 @@ const Form = () => {
     setCastAndCrew(updatedCastAndCrew);
   };
 
-  
-
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
       e.preventDefault();

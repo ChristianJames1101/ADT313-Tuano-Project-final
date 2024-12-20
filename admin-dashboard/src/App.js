@@ -28,7 +28,7 @@ const router = createBrowserRouter([
       //Temporarily disabled the dashboard route
        {
          path: '/main/dashboard',
-        element: <Dashboard />,
+        element: <Dashboard />, 
        },
       {
         path: '/main/movies',
